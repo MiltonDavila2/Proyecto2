@@ -100,8 +100,100 @@ namespace Ecommerce.DataAcess
                     IdCategoria = 1,
                     Precio = 8,
                     Imagen = "producto2.jpg"
+                },
+                new Producto
+                {
+                    IdProducto = 3,
+                    Nombre = "Agarradera con Toallero para Puerta de Vidrio Templado",
+                    Descripcion = "Agarradera con toallero 2 en 1 para puertas de vidrio\r\nTubo de 19 mm que ofrece un gran soporte\r\nDiseño simple pero elegante",
+                    IdCategoria = 2,
+                    Precio = 30,
+                    Imagen = "producto3.jpg"
+
+                },
+                new Producto
+                {
+                    IdProducto = 4,
+                    Nombre = "Agarradera de Acero Inoxidable",
+                    Descripcion = "Vaciada Tipo Barra",
+                    IdCategoria = 2,
+                    Precio = 1,
+                    Imagen = "producto4.jpg"
+                },
+                new Producto
+                {
+                    IdProducto= 5,
+                    Nombre= "Bisagra de Suelo Jackson 120 KG",
+                    Descripcion = "Bisagra de suelo jackson 120 kg para puertas de aluminio y cristal templado modernas.\r\nLogra un sistema de cierre automático y de fácil instalación\r\nDimensiones de la caja: 32 x 10 x 10 cm",
+                    IdCategoria = 3,
+                    Precio = 75,
+                    Imagen = "producto5.jpg"
+                },
+                new Producto
+                {
+                    IdProducto = 6,
+                    Nombre = "Bisagra de Suelo King 8300",
+                    Descripcion = "Bomga King 8300\r\nMedidas: 950*2100 mm aprox.\r\nCobertura de 180°",
+                    IdCategoria = 3,
+                    Precio = 50,
+                    Imagen = "producto6.jpg"
+                },
+                new Producto
+                {
+                    IdProducto = 7,
+                    Nombre = "Cerradura de Puerta para Baño",
+                    Descripcion = "Cerradura de puerta para baño y entradas de dormitorio.\r\nDimensiones de la caja: 20 x 17 cm (Ancho x Alto).\r\nIncluye un juego de 3 llaves.",
+                    IdCategoria = 4,
+                    Precio = 11,
+                    Imagen = "producto7.jpg"
+                },
+                new Producto
+                {
+                    IdProducto = 8,
+                    Nombre = "Cerradura Pico de Loro",
+                    Descripcion = "Cerradura pico de loro hecho en metal de calidad que ofrece una estabilidad y mayor seguridad.\r\nColores: natural, blanco, negro.\r\nIdeal para puertas de aluminio, pvc, madera, corredizas, etc.",
+                    IdCategoria = 4,
+                    Precio = 15,
+                    Imagen = "producto8.jpg"
+                },
+                new Producto
+                {
+                    IdProducto = 9,
+                    Nombre = "Chova para Impermeabilizar",
+                    Descripcion = "Chova para impermeabilizar techo, pared, piso y más\r\nDimensiones: 20 centímetros x 10 metros.\r\nEvita superficies húmedas y mantén tu patrimonio libre del deterioro.",
+                    IdCategoria = 5,
+                    Precio = 25,
+                    Imagen = "producto9.jpg"
+                },
+                new Producto
+                {
+                    IdProducto = 10,
+                    Nombre = "Chova Tapa Goteras",
+                    Descripcion = "Sella fisuras, uniones, juntas, traslapes, etc.\r\n10 m x 10 cm Marca Alumband\r\nDuctos de ventilación y aire acondicionado.",
+                    IdCategoria = 5,
+                    Precio = 14,
+                    Imagen = "producto10.jpg"
+                },
+                new Producto
+                {
+                    IdProducto = 11,
+                    Nombre = "Disco Diamante",
+                    Descripcion = "Disco diamante continuo\r\nDisco de 4.5 pulgadas\r\nMáximo rpm 13200",
+                    IdCategoria = 6,
+                    Precio = 6,
+                    Imagen = "producto11.jpg"
+                },
+                new Producto
+                {
+                    IdProducto = 12,
+                    Nombre = "Disco Diamante Segmentado",
+                    Descripcion = "Disco diamante segmentado de 4.5 para corte de ladrillo, piedra, granito y otro material de gran dureza.\r\nDimensiones: 115X10X22.23MM\r\nMáx rpm: 13200",
+                    IdCategoria = 6,
+                    Precio = 4,
+                    Imagen = "producto12.jpg"
                 }
-               
+
+
                 );
         }
 

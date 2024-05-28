@@ -78,8 +78,17 @@
 	  <None Remove="Resources\Images\location_icon.svg" />
 	  <None Remove="Resources\Images\logout_icon.svg" />
 	  <None Remove="Resources\Images\productos\producto1.jpg" />
+	  <None Remove="Resources\Images\productos\producto10.jpg" />
+	  <None Remove="Resources\Images\productos\producto11.jpg" />
+	  <None Remove="Resources\Images\productos\producto12.jpg" />
 	  <None Remove="Resources\Images\productos\producto2.jpg" />
 	  <None Remove="Resources\Images\productos\producto3.jpg" />
+	  <None Remove="Resources\Images\productos\producto4.jpg" />
+	  <None Remove="Resources\Images\productos\producto5.jpg" />
+	  <None Remove="Resources\Images\productos\producto6.jpg" />
+	  <None Remove="Resources\Images\productos\producto7.jpg" />
+	  <None Remove="Resources\Images\productos\producto8.jpg" />
+	  <None Remove="Resources\Images\productos\producto9.jpg" />
 	  <None Remove="Resources\Images\profile_icon.svg" />
 	  <None Remove="Resources\Images\success.png" />
 	</ItemGroup>
