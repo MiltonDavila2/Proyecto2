@@ -74,6 +74,7 @@
 	  <None Remove="Resources\Images\chova.svg" />
 	  <None Remove="Resources\Images\disco.svg" />
 	  <None Remove="Resources\Images\foto_perfil.JPG" />
+	  <None Remove="Resources\Images\Herramiento.svg" />
 	  <None Remove="Resources\Images\home_icon.svg" />
 	  <None Remove="Resources\Images\location_icon.svg" />
 	  <None Remove="Resources\Images\logout_icon.svg" />

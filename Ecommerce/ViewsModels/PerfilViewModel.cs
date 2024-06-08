@@ -15,7 +15,7 @@ namespace Ecommerce.ViewsModels
         [RelayCommand]
         public async Task CerrarSesion()
         {
-            bool answer = await Shell.Current.DisplayAlert("Mensaje", "Desea salir?", "Si, continuar", "No, volver");
+            bool answer = await Shell.Current.DisplayAlert("Confirmacion", "Desea salir?", "Si, continuar", "No, volver");
             if (answer)
             {
                 Preferences.Set("logueado",string.Empty);

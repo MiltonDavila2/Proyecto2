@@ -46,12 +46,12 @@ namespace Ecommerce.ViewsModels
             if(existe == null)
             {
                 
-                await Shell.Current.DisplayAlert("Mensaje", "El producto fue agregado al carrito", "Aceptar");
+                await Shell.Current.DisplayAlert("Exito", "El producto fue agregado al carrito", "Aceptar");
             }
             else
             {
                 _context.Carritos.Remove(existe);
-                await Shell.Current.DisplayAlert("Mensaje", "El producto fue actualizado", "Aceptar");
+                await Shell.Current.DisplayAlert("Exito", "El producto fue actualizado", "Aceptar");
             }
 
             _context.Carritos.Add(new Modelos.Carrito

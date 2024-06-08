@@ -33,7 +33,7 @@ namespace Ecommerce.ViewsModels
                string.IsNullOrEmpty(Ciudad)
                )
             {
-                await Shell.Current.DisplayAlert("Mensaje", "Debe ingresar todos los campos", "Aceptar");
+                await Shell.Current.DisplayAlert("Error", "Debe ingresar todos los campos", "Aceptar");
                 return;
             }
             _context.Direcciones.Add(new Modelos.Direccion { 

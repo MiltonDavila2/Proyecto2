@@ -18,14 +18,14 @@ namespace Ecommerce.ViewsModels
         [RelayCommand]
         private async Task Login()
         {
-            if(Usuario == "Admin" && Password == "123")
+            if(Usuario == "Milton" && Password == "Milton")
             {
                 Preferences.Set("logueado", "si");
                 Application.Current.MainPage = new AppShell();
             }
             else
             {
-                await Application.Current.MainPage.DisplayAlert("Mensaje", "No se encontraron coincidencias", "Aceptar");
+                await Application.Current.MainPage.DisplayAlert("Error", "Ingrese un usuario y contraseña valido", "Aceptar");
             }
         }
     }

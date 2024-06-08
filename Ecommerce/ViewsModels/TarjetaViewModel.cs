@@ -34,7 +34,7 @@ namespace Ecommerce.ViewsModels
                string.IsNullOrEmpty(Cvv)
                )
             {
-                await Shell.Current.DisplayAlert("Mensaje", "Debe ingresar todos los campos", "Aceptar");
+                await Shell.Current.DisplayAlert("Llenar los campos", "Debe ingresar todos los campos", "Aceptar");
                 return;
             }
             _context.Tarjetas.Add(new Modelos.Tarjeta

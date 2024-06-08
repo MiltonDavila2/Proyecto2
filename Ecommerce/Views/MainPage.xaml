@@ -16,10 +16,10 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             
-            <Label Grid.Row="0" Text="Bienvenido!!" FontSize="Title" FontAttributes="Bold"/>
+            <Label Grid.Row="0" Text="Bienvenido a ferreteria!!" FontSize="Title" FontAttributes="Bold"/>
 
             <VerticalStackLayout Grid.Row="1" Spacing="10">
-                <Label Text="Aprovecha nuestros productos" FontSize="Subtitle"/>
+                
                 <Image  HeightRequest="200" Aspect="AspectFill"  Source="banner2.jpg"/>
                 
             </VerticalStackLayout>

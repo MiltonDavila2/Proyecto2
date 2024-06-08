@@ -113,7 +113,7 @@ namespace Ecommerce.ViewsModels
         {
             if (!ListaCarrito.Any())
             {
-                await Shell.Current.DisplayAlert("Mensaje", "No hay productos en la bolsa", "Aceptar");
+                await Shell.Current.DisplayAlert("Error", "No hay productos en la bolsa", "Aceptar");
                 return;
             }
 

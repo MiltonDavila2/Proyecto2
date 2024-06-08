@@ -89,7 +89,7 @@ namespace Ecommerce.ViewsModels
         [RelayCommand]
         private async Task EliminarDireccionEvent(DireccionDTO direccion)
         {
-            bool answer = await Shell.Current.DisplayAlert("Mensaje", "Desea eliminar la direccion?", "Aceptar", "Volver");
+            bool answer = await Shell.Current.DisplayAlert("Confirmacion", "Desea eliminar la direccion?", "Aceptar", "Volver");
             if (answer)
             {
                 ListaDirecciones.Remove(direccion);
@@ -102,7 +102,7 @@ namespace Ecommerce.ViewsModels
         [RelayCommand]
         private async Task EliminarTarjetaEvent(TarjetaDTO tarjeta)
         {
-            bool answer = await Shell.Current.DisplayAlert("Mensaje", "Desea eliminar la tarjeta?", "Aceptar", "Volver");
+            bool answer = await Shell.Current.DisplayAlert("Confirmacion", "Desea eliminar la tarjeta?", "Aceptar", "Volver");
             if (answer)
             {
                 ListaTarjetas.Remove(tarjeta);
@@ -117,12 +117,12 @@ namespace Ecommerce.ViewsModels
         {
             if (DireccionSeleccionada is null)
             {
-                await Shell.Current.DisplayAlert("Mensaje", "Debe seleccionar una dirección", "Aceptar");
+                await Shell.Current.DisplayAlert("Advertencia", "Debe seleccionar una dirección", "Aceptar");
                 return;
             }
             if (TarjetaSeleccionada is null)
             {
-                await Shell.Current.DisplayAlert("Mensaje", "Debe seleccionar una tarjeta", "Aceptar");
+                await Shell.Current.DisplayAlert("Advertencia", "Debe seleccionar una tarjeta", "Aceptar");
                 return;
             }
 
@@ -159,7 +159,7 @@ namespace Ecommerce.ViewsModels
             }
             catch(Exception ex)
             {
-                await Shell.Current.DisplayAlert("Mensaje", "No se pudo completar la compra", "Aceptar");
+                await Shell.Current.DisplayAlert("Error", "No se pudo completar la compra", "Aceptar");
             }
 
         }
