@@ -95,7 +95,7 @@
         </ScrollView>
 
         <StackLayout Grid.Row="2" Orientation="Horizontal" BackgroundColor="WhiteSmoke" Padding="10">
-            <Button Text="Continuar" HorizontalOptions="EndAndExpand" WidthRequest="150" BackgroundColor="#3E8EED" 
+            <Button Text="Continuar" HorizontalOptions="EndAndExpand" WidthRequest="150" BackgroundColor="#ffd700" 
                     Command="{Binding ContinuarEventCommand}"
                     ></Button>
         </StackLayout>
