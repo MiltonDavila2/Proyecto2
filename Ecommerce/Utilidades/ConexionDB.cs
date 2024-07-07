@@ -1,4 +1,8 @@
 ﻿
+using System;
+using System.IO;
+using Microsoft.Maui.Devices;
+
 namespace Ecommerce.Utilidades
 {
     public static class ConexionDB
@@ -11,12 +15,16 @@ namespace Ecommerce.Utilidades
             {
                 rutaBaseDatos = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
                 rutaBaseDatos = Path.Combine(rutaBaseDatos, nombreBaseDatos);
-
             }
             else if (DeviceInfo.Platform == DevicePlatform.iOS)
             {
                 rutaBaseDatos = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
                 rutaBaseDatos = Path.Combine(rutaBaseDatos, "..", "Library", nombreBaseDatos);
+            }
+            else if (DeviceInfo.Platform == DevicePlatform.WinUI)
+            {
+                rutaBaseDatos = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+                rutaBaseDatos = Path.Combine(rutaBaseDatos, nombreBaseDatos);
             }
 
             return rutaBaseDatos;
