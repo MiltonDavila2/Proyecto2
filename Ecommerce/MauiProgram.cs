@@ -1,4 +1,5 @@
 ﻿using Ecommerce.DataAcess;
+using Ecommerce.Utilidades;
 using Ecommerce.Views;
 using Ecommerce.ViewsModels;
 using Microsoft.Extensions.Logging;
@@ -18,8 +19,13 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
+
+
         //PASO 2.-  Agregar el contexto a la base de datos y la pagina
         builder.Services.AddDbContext<EcommerceDbContext>();
+
+        
+
 
 
         builder.Services.AddTransient<LoginPage>();
@@ -56,6 +62,8 @@ public static class MauiProgram
 
         builder.Services.AddTransient<LoginViewModel>();
         builder.Services.AddTransient<LoginPage>();
+
+        builder.Services.AddSingleton(HttpCliente.CreateHttpClient());
 
         //PASO 3.- Iniciar la base de datos junto con la aplicacion
         var dbContext = new EcommerceDbContext();

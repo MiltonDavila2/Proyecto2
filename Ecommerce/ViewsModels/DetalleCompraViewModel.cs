@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using Ecommerce.Utilidades;
 using CommunityToolkit.Mvvm.Input;
 using Ecommerce.DataAcess;
 using Ecommerce.DTOs;
@@ -7,12 +8,15 @@ using Ecommerce.Views;
 using Microsoft.EntityFrameworkCore;
 
 using System.Collections.ObjectModel;
+using System.Net.Http.Json;
 
 
 namespace Ecommerce.ViewsModels
 {
     public partial class DetalleCompraViewModel : ObservableObject
     {
+
+        private readonly HttpClient _httpClient;
         private readonly EcommerceDbContext _context;
         [ObservableProperty]
         public DireccionDTO direccionSeleccionada;
@@ -53,8 +57,9 @@ namespace Ecommerce.ViewsModels
         [ObservableProperty]
         public decimal totalCompra;
 
-        public DetalleCompraViewModel(EcommerceDbContext context)
+        public DetalleCompraViewModel(HttpClient httpclient,EcommerceDbContext context)
         {
+            _httpClient= httpclient;
             _context = context;
             TotalCompra = RetornaTotalCompra();
 
@@ -153,9 +158,13 @@ namespace Ecommerce.ViewsModels
               
                 await _context.SaveChangesAsync();
 
+              
+
                 var uri = $"{nameof(CompraExitosaPage)}?numero={compra.NumeroCompra}";
                 await Shell.Current.GoToAsync(uri);
 
+
+                var response = await _httpClient.PostAsJsonAsync("api/compras", compra);
             }
             catch(Exception ex)
             {
